@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E09F9C5218AD19B00D0DC5C /* PriceString.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PriceString.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5E54172121771EFB00732DB4 /* CodeSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E54172421771EFB00732DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E54172621771EFB00732DB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 			children = (
 				5E54173621771F1D00732DB4 /* DateTimer.playground */,
 				5E5417372177242900732DB4 /* AnimationSet.playground */,
+				5E09F9C5218AD19B00D0DC5C /* PriceString.playground */,
 				5E54172421771EFB00732DB4 /* AppDelegate.swift */,
 				5E54172621771EFB00732DB4 /* ViewController.swift */,
 				5E54172821771EFB00732DB4 /* Main.storyboard */,
