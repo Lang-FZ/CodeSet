@@ -12,8 +12,12 @@
 		5E54172A21771EFB00732DB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E54172821771EFB00732DB4 /* Main.storyboard */; };
 		5E54172C21771EFD00732DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E54172B21771EFD00732DB4 /* Assets.xcassets */; };
 		5E54172F21771EFD00732DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E54172D21771EFD00732DB4 /* LaunchScreen.storyboard */; };
+
 		CF8AA6F3225A689800C4D946 /* ImageView矩阵映射.png in Resources */ = {isa = PBXBuildFile; fileRef = CF8AA6F1225A689800C4D946 /* ImageView矩阵映射.png */; };
 		CF8AA6F4225A689800C4D946 /* Label矩阵映射.png in Resources */ = {isa = PBXBuildFile; fileRef = CF8AA6F2225A689800C4D946 /* Label矩阵映射.png */; };
+
+		5EC15FCF21E5A57B00E578C8 /* NSDate+BPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC15FCD21E5A57A00E578C8 /* NSDate+BPExtension.m */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +31,15 @@
 		5E54173021771EFD00732DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E54173621771F1D00732DB4 /* DateTimer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DateTimer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5E5417372177242900732DB4 /* AnimationSet.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AnimationSet.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+
 		CF8AA6F1225A689800C4D946 /* ImageView矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageView矩阵映射.png"; sourceTree = "<group>"; };
 		CF8AA6F2225A689800C4D946 /* Label矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Label矩阵映射.png"; sourceTree = "<group>"; };
 		CF8AA6F6225A695A00C4D946 /* 1.TwoSum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1.TwoSum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+
+		5EC15FCC21E5A57900E578C8 /* CodeSet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeSet-Bridging-Header.h"; sourceTree = "<group>"; };
+		5EC15FCD21E5A57A00E578C8 /* NSDate+BPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BPExtension.m"; sourceTree = "<group>"; };
+		5EC15FCE21E5A57A00E578C8 /* NSDate+BPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BPExtension.h"; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +72,13 @@
 		5E54172321771EFB00732DB4 /* CodeSet */ = {
 			isa = PBXGroup;
 			children = (
+
 				CF8AA6F5225A68D100C4D946 /* LeetCode */,
 				CF8AA6F0225A689800C4D946 /* Transform矩阵 */,
+
+				5EC15FCE21E5A57A00E578C8 /* NSDate+BPExtension.h */,
+				5EC15FCD21E5A57A00E578C8 /* NSDate+BPExtension.m */,
+
 				5E54173621771F1D00732DB4 /* DateTimer.playground */,
 				5E5417372177242900732DB4 /* AnimationSet.playground */,
 				5E09F9C5218AD19B00D0DC5C /* PriceString.playground */,
@@ -73,6 +88,7 @@
 				5E54172B21771EFD00732DB4 /* Assets.xcassets */,
 				5E54172D21771EFD00732DB4 /* LaunchScreen.storyboard */,
 				5E54173021771EFD00732DB4 /* Info.plist */,
+				5EC15FCC21E5A57900E578C8 /* CodeSet-Bridging-Header.h */,
 			);
 			path = CodeSet;
 			sourceTree = "<group>";
@@ -126,6 +142,7 @@
 				TargetAttributes = {
 					5E54172021771EFB00732DB4 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -168,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E54172721771EFB00732DB4 /* ViewController.swift in Sources */,
+				5EC15FCF21E5A57B00E578C8 /* NSDate+BPExtension.m in Sources */,
 				5E54172521771EFB00732DB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XZFQ3B46WE;
 				INFOPLIST_FILE = CodeSet/Info.plist;
@@ -323,6 +342,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = LFZ.CodeSet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeSet/CodeSet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XZFQ3B46WE;
 				INFOPLIST_FILE = CodeSet/Info.plist;
@@ -341,6 +363,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = LFZ.CodeSet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeSet/CodeSet-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
