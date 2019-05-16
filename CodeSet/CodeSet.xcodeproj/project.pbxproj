@@ -26,6 +26,7 @@
 		5EFF05B7228D0D150041CC4F /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05B6228D0D150041CC4F /* Define.swift */; };
 		CF8AA6F3225A689800C4D946 /* ImageView矩阵映射.png in Resources */ = {isa = PBXBuildFile; fileRef = CF8AA6F1225A689800C4D946 /* ImageView矩阵映射.png */; };
 		CF8AA6F4225A689800C4D946 /* Label矩阵映射.png in Resources */ = {isa = PBXBuildFile; fileRef = CF8AA6F2225A689800C4D946 /* Label矩阵映射.png */; };
+		CFE5EFBC228DD9D50089BBAC /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE5EFBB228DD9D50089BBAC /* GPUImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		CF8AA6F1225A689800C4D946 /* ImageView矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageView矩阵映射.png"; sourceTree = "<group>"; };
 		CF8AA6F2225A689800C4D946 /* Label矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Label矩阵映射.png"; sourceTree = "<group>"; };
 		CF8AA6F6225A695A00C4D946 /* 1.TwoSum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1.TwoSum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CFE5EFBB228DD9D50089BBAC /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			files = (
 				5EFF05B3228D0C530041CC4F /* Metal.framework in Frameworks */,
 				5EFF05AE228D01EB0041CC4F /* QuartzCore.framework in Frameworks */,
+				CFE5EFBC228DD9D50089BBAC /* GPUImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +127,7 @@
 		5E757ED02287094A00E6C75A /* Metal */ = {
 			isa = PBXGroup;
 			children = (
+				CFE5EFBB228DD9D50089BBAC /* GPUImage.framework */,
 				5EFF05AA228CFC360041CC4F /* MetalClearScreenController.swift */,
 				5EFF05AF228D0B700041CC4F /* Views */,
 			);
@@ -145,6 +149,7 @@
 				5EFF05B8228D10CE0041CC4F /* Clear */,
 				5EFF05B9228D10DE0041CC4F /* Triangle */,
 				5E095952228D414E004898D7 /* BufferTexture */,
+				CFE5EFBD228DDA0A0089BBAC /* GPUImage */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +187,13 @@
 				CF8AA6F6225A695A00C4D946 /* 1.TwoSum.playground */,
 			);
 			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		CFE5EFBD228DDA0A0089BBAC /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GPUImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,8 +422,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6EMFL9A2M9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CodeSet/Metal",
+				);
 				INFOPLIST_FILE = CodeSet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,8 +448,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6EMFL9A2M9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CodeSet/Metal",
+				);
 				INFOPLIST_FILE = CodeSet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
