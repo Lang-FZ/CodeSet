@@ -1,5 +1,5 @@
 //
-//  TestTriangleMetalView.swift
+//  TestBufferTextureMetalView.swift
 //  CodeSet
 //
 //  Created by LangFZ on 2019/5/16.
@@ -7,11 +7,8 @@
 //
 
 import UIKit
-import Metal
-import QuartzCore
-import simd
 
-class TestTriangleMetalView: UIView {
+class TestBufferTextureMetalView: UIView {
     
     /** 属性 */
     
@@ -33,7 +30,7 @@ class TestTriangleMetalView: UIView {
         var library:MTLLibrary!
         
         do {
-            library = try device.makeLibrary(filepath: Bundle.main.path(forResource: "TestTriangleShaders", ofType: "metal") ?? "")
+            library = try device.makeLibrary(filepath: Bundle.main.path(forResource: "TestBufferTextureShaders", ofType: "metal") ?? "")
         } catch {
             library = device.makeDefaultLibrary()!
         }
@@ -48,6 +45,45 @@ class TestTriangleMetalView: UIView {
         pipelineState = try! device.makeRenderPipelineState(descriptor: pipelineDescriptor)
         
         return pipelineState
+    }()
+    private lazy var vertexBuffer:MTLBuffer = {
+        
+        let vertices = [
+            TMVertex_texture.init(position: [-1.0,-1.0], textureCoordinate: [0,1]),
+            TMVertex_texture.init(position: [-1.0,1.0], textureCoordinate: [0,0]),
+            TMVertex_texture.init(position: [1.0,-1.0], textureCoordinate: [1,1]),
+            TMVertex_texture.init(position: [1.0,1.0], textureCoordinate: [1,0])
+        ]
+        
+        let vertexBuffer = self.device.makeBuffer(bytes: vertices, length: MemoryLayout<TMVertex_texture>.size * vertices.count, options: MTLResourceOptions.cpuCacheModeWriteCombined)!
+        
+        return vertexBuffer
+    }()
+    private lazy var texture:MTLTexture = {
+       
+        let image = UIImage.init(named: "lena")!
+        
+        let imageRef = image.cgImage!
+        let width = imageRef.width
+        let height = imageRef.height
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        let rawData = calloc(height * width * 4, MemoryLayout<UInt8>.size)
+        let bytesPerPixel:Int = 4
+        let bytesPerRow:Int = bytesPerPixel * width
+        let bitsPerComponent:Int = 8
+        let bitmapContext = CGContext.init(data: rawData, width: width, height: height, bitsPerComponent: bitsPerComponent, bytesPerRow: bytesPerRow, space: colorSpace, bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue | CGBitmapInfo.byteOrder32Big.rawValue)
+        
+        bitmapContext?.draw(imageRef, in: CGRect.init(x: 0, y: 0, width: CGFloat.init(width), height: CGFloat.init(height)))
+        let textureDescriptor = MTLTextureDescriptor.texture2DDescriptor(pixelFormat: MTLPixelFormat.rgba8Unorm, width: width, height: height, mipmapped: false)
+        
+        let texture:MTLTexture = device.makeTexture(descriptor: textureDescriptor)!
+        
+        let region:MTLRegion = MTLRegionMake2D(0, 0, width, height)
+        texture.replace(region: region, mipmapLevel: 0, withBytes: rawData!, bytesPerRow: bytesPerRow)
+        
+        free(rawData)
+        
+        return texture
     }()
     
     
@@ -83,14 +119,9 @@ class TestTriangleMetalView: UIView {
         let commandEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: renderPassDescripor)
         commandEncoder?.setRenderPipelineState(pipelineState)
         
-        let vertices = [
-            TMVertex.init(position: [0.5,-0.5], color: [1,0,0,1]),
-            TMVertex.init(position: [-0.5,-0.5], color: [0,1,0,1]),
-            TMVertex.init(position: [0.5,0.5], color: [0,0,1,1])
-        ]
-        
-        commandEncoder?.setVertexBytes(vertices, length: MemoryLayout<TMVertex>.size * 3, index: Int.init(TMVertexInputIndexVertices.rawValue))
-        commandEncoder?.drawPrimitives(type: MTLPrimitiveType.triangle, vertexStart: 0, vertexCount: 3)
+        commandEncoder?.setVertexBuffer(vertexBuffer, offset: 0, index: 0)
+        commandEncoder?.setFragmentTexture(texture, index: 0)
+        commandEncoder?.drawPrimitives(type: MTLPrimitiveType.triangleStrip, vertexStart: 0, vertexCount: 4)
         
         commandEncoder?.endEncoding()
         commandBuffer.present(drawable)
@@ -101,7 +132,6 @@ class TestTriangleMetalView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     deinit {
-        print("deini_TestTriangleMetalView")
+        print("deini_TestBufferTextureMetalView")
     }
 }
-

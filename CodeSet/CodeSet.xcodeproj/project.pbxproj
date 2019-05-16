@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		5E095950228D1402004898D7 /* TestTriangleMetalTMVertex.h in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05BC228D11480041CC4F /* TestTriangleMetalTMVertex.h */; };
 		5E095951228D147F004898D7 /* CodeSet-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 5EC15FCC21E5A57900E578C8 /* CodeSet-Bridging-Header.h */; };
+		5E095954228D4173004898D7 /* TestBufferTextureMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E095953228D4173004898D7 /* TestBufferTextureMetalView.swift */; };
+		5E09595C228D7234004898D7 /* lena.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E09595B228D7234004898D7 /* lena.png */; };
+		5E09595E228D760B004898D7 /* TestBufferTextureMetalTMVertex.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E09595D228D75C2004898D7 /* TestBufferTextureMetalTMVertex.h */; };
+		5E095960228D7F58004898D7 /* TestBufferTextureShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5E095955228D48D5004898D7 /* TestBufferTextureShaders.metal */; };
 		5E54172521771EFB00732DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54172421771EFB00732DB4 /* AppDelegate.swift */; };
 		5E54172721771EFB00732DB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54172621771EFB00732DB4 /* ViewController.swift */; };
 		5E54172C21771EFD00732DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E54172B21771EFD00732DB4 /* Assets.xcassets */; };
@@ -20,12 +24,15 @@
 		5EFF05B3228D0C530041CC4F /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFF05B2228D0C530041CC4F /* Metal.framework */; };
 		5EFF05B5228D0CBD0041CC4F /* TestTriangleMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05B4228D0CBD0041CC4F /* TestTriangleMetalView.swift */; };
 		5EFF05B7228D0D150041CC4F /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05B6228D0D150041CC4F /* Define.swift */; };
-		5EFF05BB228D10FC0041CC4F /* TestTriangleShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05BA228D10FC0041CC4F /* TestTriangleShaders.metal */; };
 		CF8AA6F3225A689800C4D946 /* ImageView矩阵映射.png in Resources */ = {isa = PBXBuildFile; fileRef = CF8AA6F1225A689800C4D946 /* ImageView矩阵映射.png */; };
 		CF8AA6F4225A689800C4D946 /* Label矩阵映射.png in Resources */ = {isa = PBXBuildFile; fileRef = CF8AA6F2225A689800C4D946 /* Label矩阵映射.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E095953228D4173004898D7 /* TestBufferTextureMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBufferTextureMetalView.swift; sourceTree = "<group>"; };
+		5E095955228D48D5004898D7 /* TestBufferTextureShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TestBufferTextureShaders.metal; sourceTree = "<group>"; };
+		5E09595B228D7234004898D7 /* lena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lena.png; sourceTree = "<group>"; };
+		5E09595D228D75C2004898D7 /* TestBufferTextureMetalTMVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBufferTextureMetalTMVertex.h; sourceTree = "<group>"; };
 		5E09F9C5218AD19B00D0DC5C /* PriceString.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PriceString.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5E54172121771EFB00732DB4 /* CodeSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E54172421771EFB00732DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +71,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E095952228D414E004898D7 /* BufferTexture */ = {
+			isa = PBXGroup;
+			children = (
+				5E09595B228D7234004898D7 /* lena.png */,
+				5E095953228D4173004898D7 /* TestBufferTextureMetalView.swift */,
+				5E09595D228D75C2004898D7 /* TestBufferTextureMetalTMVertex.h */,
+				5E095955228D48D5004898D7 /* TestBufferTextureShaders.metal */,
+			);
+			path = BufferTexture;
+			sourceTree = "<group>";
+		};
 		5E54171821771EFB00732DB4 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +144,7 @@
 			children = (
 				5EFF05B8228D10CE0041CC4F /* Clear */,
 				5EFF05B9228D10DE0041CC4F /* Triangle */,
+				5E095952228D414E004898D7 /* BufferTexture */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF8AA6F3225A689800C4D946 /* ImageView矩阵映射.png in Resources */,
+				5E09595C228D7234004898D7 /* lena.png in Resources */,
 				5E54172F21771EFD00732DB4 /* LaunchScreen.storyboard in Resources */,
 				5E54172C21771EFD00732DB4 /* Assets.xcassets in Resources */,
 				CF8AA6F4225A689800C4D946 /* Label矩阵映射.png in Resources */,
@@ -238,12 +258,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E09595E228D760B004898D7 /* TestBufferTextureMetalTMVertex.h in Sources */,
+				5E095960228D7F58004898D7 /* TestBufferTextureShaders.metal in Sources */,
 				5E095951228D147F004898D7 /* CodeSet-Bridging-Header.h in Sources */,
 				5E095950228D1402004898D7 /* TestTriangleMetalTMVertex.h in Sources */,
 				5E54172721771EFB00732DB4 /* ViewController.swift in Sources */,
 				5EFF05B1228D0B830041CC4F /* TestClearMetalView.swift in Sources */,
-				5EFF05BB228D10FC0041CC4F /* TestTriangleShaders.metal in Sources */,
 				5EC15FCF21E5A57B00E578C8 /* NSDate+BPExtension.m in Sources */,
+				5E095954228D4173004898D7 /* TestBufferTextureMetalView.swift in Sources */,
 				5EFF05AB228CFC360041CC4F /* MetalClearScreenController.swift in Sources */,
 				5EFF05B5228D0CBD0041CC4F /* TestTriangleMetalView.swift in Sources */,
 				5E54172521771EFB00732DB4 /* AppDelegate.swift in Sources */,

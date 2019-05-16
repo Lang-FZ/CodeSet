@@ -20,13 +20,19 @@ class MetalTestController: UIViewController {
         let textTriangle = TestTriangleMetalView.init(frame: CGRect.init(x: frameMath(15), y: kNaviBarH, width: frameMath(300), height: frameMath(500)))
         return textTriangle
     }()
+    //buffer_texture
+    private lazy var buffer_texture: TestBufferTextureMetalView = {
+        let buffer_texture = TestBufferTextureMetalView.init(frame: CGRect.init(x: frameMath(15), y: kNaviBarH, width: frameMath(300), height: frameMath(500)))
+        return buffer_texture
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.orange
         
 //        view.addSubview(testClear)
-        view.addSubview(textTriangle)
+//        view.addSubview(textTriangle)
+        view.addSubview(buffer_texture)
     }
 }
 

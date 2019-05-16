@@ -9,7 +9,7 @@
 #ifndef TestTriangleMetalTMVertex_h
 #define TestTriangleMetalTMVertex_h
 
-#include <simd/simd.h>
+#import <simd/simd.h>
 
 typedef struct {
     
