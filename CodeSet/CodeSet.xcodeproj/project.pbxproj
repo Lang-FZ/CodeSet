@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E095950228D1402004898D7 /* TestTriangleMetalTMVertex.h in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05BC228D11480041CC4F /* TestTriangleMetalTMVertex.h */; };
+		5E095951228D147F004898D7 /* CodeSet-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 5EC15FCC21E5A57900E578C8 /* CodeSet-Bridging-Header.h */; };
 		5E54172521771EFB00732DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54172421771EFB00732DB4 /* AppDelegate.swift */; };
 		5E54172721771EFB00732DB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54172621771EFB00732DB4 /* ViewController.swift */; };
-		5E54172A21771EFB00732DB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E54172821771EFB00732DB4 /* Main.storyboard */; };
 		5E54172C21771EFD00732DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E54172B21771EFD00732DB4 /* Assets.xcassets */; };
 		5E54172F21771EFD00732DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E54172D21771EFD00732DB4 /* LaunchScreen.storyboard */; };
-
+		5EC15FCF21E5A57B00E578C8 /* NSDate+BPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC15FCD21E5A57A00E578C8 /* NSDate+BPExtension.m */; };
+		5EFF05AB228CFC360041CC4F /* MetalClearScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05AA228CFC360041CC4F /* MetalClearScreenController.swift */; };
+		5EFF05AE228D01EB0041CC4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFF05AD228D01EB0041CC4F /* QuartzCore.framework */; };
+		5EFF05B1228D0B830041CC4F /* TestClearMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05B0228D0B830041CC4F /* TestClearMetalView.swift */; };
+		5EFF05B3228D0C530041CC4F /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFF05B2228D0C530041CC4F /* Metal.framework */; };
+		5EFF05B5228D0CBD0041CC4F /* TestTriangleMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05B4228D0CBD0041CC4F /* TestTriangleMetalView.swift */; };
+		5EFF05B7228D0D150041CC4F /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05B6228D0D150041CC4F /* Define.swift */; };
+		5EFF05BB228D10FC0041CC4F /* TestTriangleShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05BA228D10FC0041CC4F /* TestTriangleShaders.metal */; };
 		CF8AA6F3225A689800C4D946 /* ImageView矩阵映射.png in Resources */ = {isa = PBXBuildFile; fileRef = CF8AA6F1225A689800C4D946 /* ImageView矩阵映射.png */; };
 		CF8AA6F4225A689800C4D946 /* Label矩阵映射.png in Resources */ = {isa = PBXBuildFile; fileRef = CF8AA6F2225A689800C4D946 /* Label矩阵映射.png */; };
-
-		5EC15FCF21E5A57B00E578C8 /* NSDate+BPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC15FCD21E5A57A00E578C8 /* NSDate+BPExtension.m */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,21 +30,25 @@
 		5E54172121771EFB00732DB4 /* CodeSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E54172421771EFB00732DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E54172621771EFB00732DB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5E54172921771EFB00732DB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E54172B21771EFD00732DB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E54172E21771EFD00732DB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E54173021771EFD00732DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E54173621771F1D00732DB4 /* DateTimer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DateTimer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5E5417372177242900732DB4 /* AnimationSet.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AnimationSet.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-
-		CF8AA6F1225A689800C4D946 /* ImageView矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageView矩阵映射.png"; sourceTree = "<group>"; };
-		CF8AA6F2225A689800C4D946 /* Label矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Label矩阵映射.png"; sourceTree = "<group>"; };
-		CF8AA6F6225A695A00C4D946 /* 1.TwoSum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1.TwoSum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-
 		5EC15FCC21E5A57900E578C8 /* CodeSet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeSet-Bridging-Header.h"; sourceTree = "<group>"; };
 		5EC15FCD21E5A57A00E578C8 /* NSDate+BPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BPExtension.m"; sourceTree = "<group>"; };
 		5EC15FCE21E5A57A00E578C8 /* NSDate+BPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BPExtension.h"; sourceTree = "<group>"; };
-
+		5EFF05AA228CFC360041CC4F /* MetalClearScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalClearScreenController.swift; sourceTree = "<group>"; };
+		5EFF05AD228D01EB0041CC4F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5EFF05B0228D0B830041CC4F /* TestClearMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClearMetalView.swift; sourceTree = "<group>"; };
+		5EFF05B2228D0C530041CC4F /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		5EFF05B4228D0CBD0041CC4F /* TestTriangleMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTriangleMetalView.swift; sourceTree = "<group>"; };
+		5EFF05B6228D0D150041CC4F /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		5EFF05BA228D10FC0041CC4F /* TestTriangleShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TestTriangleShaders.metal; sourceTree = "<group>"; };
+		5EFF05BC228D11480041CC4F /* TestTriangleMetalTMVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTriangleMetalTMVertex.h; sourceTree = "<group>"; };
+		CF8AA6F1225A689800C4D946 /* ImageView矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageView矩阵映射.png"; sourceTree = "<group>"; };
+		CF8AA6F2225A689800C4D946 /* Label矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Label矩阵映射.png"; sourceTree = "<group>"; };
+		CF8AA6F6225A695A00C4D946 /* 1.TwoSum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1.TwoSum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EFF05B3228D0C530041CC4F /* Metal.framework in Frameworks */,
+				5EFF05AE228D01EB0041CC4F /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +69,7 @@
 			children = (
 				5E54172321771EFB00732DB4 /* CodeSet */,
 				5E54172221771EFB00732DB4 /* Products */,
+				5EFF05AC228D01EB0041CC4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,25 +84,68 @@
 		5E54172321771EFB00732DB4 /* CodeSet */ = {
 			isa = PBXGroup;
 			children = (
-
+				5E757ED02287094A00E6C75A /* Metal */,
 				CF8AA6F5225A68D100C4D946 /* LeetCode */,
 				CF8AA6F0225A689800C4D946 /* Transform矩阵 */,
-
 				5EC15FCE21E5A57A00E578C8 /* NSDate+BPExtension.h */,
 				5EC15FCD21E5A57A00E578C8 /* NSDate+BPExtension.m */,
-
 				5E54173621771F1D00732DB4 /* DateTimer.playground */,
 				5E5417372177242900732DB4 /* AnimationSet.playground */,
 				5E09F9C5218AD19B00D0DC5C /* PriceString.playground */,
 				5E54172421771EFB00732DB4 /* AppDelegate.swift */,
 				5E54172621771EFB00732DB4 /* ViewController.swift */,
-				5E54172821771EFB00732DB4 /* Main.storyboard */,
+				5EFF05B6228D0D150041CC4F /* Define.swift */,
 				5E54172B21771EFD00732DB4 /* Assets.xcassets */,
 				5E54172D21771EFD00732DB4 /* LaunchScreen.storyboard */,
 				5E54173021771EFD00732DB4 /* Info.plist */,
 				5EC15FCC21E5A57900E578C8 /* CodeSet-Bridging-Header.h */,
 			);
 			path = CodeSet;
+			sourceTree = "<group>";
+		};
+		5E757ED02287094A00E6C75A /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				5EFF05AA228CFC360041CC4F /* MetalClearScreenController.swift */,
+				5EFF05AF228D0B700041CC4F /* Views */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		5EFF05AC228D01EB0041CC4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EFF05B2228D0C530041CC4F /* Metal.framework */,
+				5EFF05AD228D01EB0041CC4F /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EFF05AF228D0B700041CC4F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EFF05B8228D10CE0041CC4F /* Clear */,
+				5EFF05B9228D10DE0041CC4F /* Triangle */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5EFF05B8228D10CE0041CC4F /* Clear */ = {
+			isa = PBXGroup;
+			children = (
+				5EFF05B0228D0B830041CC4F /* TestClearMetalView.swift */,
+			);
+			path = Clear;
+			sourceTree = "<group>";
+		};
+		5EFF05B9228D10DE0041CC4F /* Triangle */ = {
+			isa = PBXGroup;
+			children = (
+				5EFF05B4228D0CBD0041CC4F /* TestTriangleMetalView.swift */,
+				5EFF05BC228D11480041CC4F /* TestTriangleMetalTMVertex.h */,
+				5EFF05BA228D10FC0041CC4F /* TestTriangleShaders.metal */,
+			);
+			path = Triangle;
 			sourceTree = "<group>";
 		};
 		CF8AA6F0225A689800C4D946 /* Transform矩阵 */ = {
@@ -172,7 +227,6 @@
 				CF8AA6F3225A689800C4D946 /* ImageView矩阵映射.png in Resources */,
 				5E54172F21771EFD00732DB4 /* LaunchScreen.storyboard in Resources */,
 				5E54172C21771EFD00732DB4 /* Assets.xcassets in Resources */,
-				5E54172A21771EFB00732DB4 /* Main.storyboard in Resources */,
 				CF8AA6F4225A689800C4D946 /* Label矩阵映射.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,23 +238,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E095951228D147F004898D7 /* CodeSet-Bridging-Header.h in Sources */,
+				5E095950228D1402004898D7 /* TestTriangleMetalTMVertex.h in Sources */,
 				5E54172721771EFB00732DB4 /* ViewController.swift in Sources */,
+				5EFF05B1228D0B830041CC4F /* TestClearMetalView.swift in Sources */,
+				5EFF05BB228D10FC0041CC4F /* TestTriangleShaders.metal in Sources */,
 				5EC15FCF21E5A57B00E578C8 /* NSDate+BPExtension.m in Sources */,
+				5EFF05AB228CFC360041CC4F /* MetalClearScreenController.swift in Sources */,
+				5EFF05B5228D0CBD0041CC4F /* TestTriangleMetalView.swift in Sources */,
 				5E54172521771EFB00732DB4 /* AppDelegate.swift in Sources */,
+				5EFF05B7228D0D150041CC4F /* Define.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5E54172821771EFB00732DB4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E54172921771EFB00732DB4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5E54172D21771EFD00732DB4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -334,8 +387,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XZFQ3B46WE;
+				DEVELOPMENT_TEAM = 6EMFL9A2M9;
 				INFOPLIST_FILE = CodeSet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,8 +409,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XZFQ3B46WE;
+				DEVELOPMENT_TEAM = 6EMFL9A2M9;
 				INFOPLIST_FILE = CodeSet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
