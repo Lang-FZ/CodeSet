@@ -9,7 +9,6 @@
 import UIKit
 import CoreImage
 import CoreGraphics
-import Photos
 
 // MARK: -
 
