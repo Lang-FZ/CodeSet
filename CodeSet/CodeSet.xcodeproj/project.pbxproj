@@ -18,6 +18,7 @@
 		5E54172C21771EFD00732DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E54172B21771EFD00732DB4 /* Assets.xcassets */; };
 		5E54172F21771EFD00732DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E54172D21771EFD00732DB4 /* LaunchScreen.storyboard */; };
 		5EC15FCF21E5A57B00E578C8 /* NSDate+BPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC15FCD21E5A57A00E578C8 /* NSDate+BPExtension.m */; };
+		5EE4863F22A0F91A00823273 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE4863E22A0F91A00823273 /* QRCodeView.swift */; };
 		5EFF05AB228CFC360041CC4F /* MetalClearScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05AA228CFC360041CC4F /* MetalClearScreenController.swift */; };
 		5EFF05AE228D01EB0041CC4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFF05AD228D01EB0041CC4F /* QuartzCore.framework */; };
 		5EFF05B1228D0B830041CC4F /* TestClearMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF05B0228D0B830041CC4F /* TestClearMetalView.swift */; };
@@ -46,6 +47,7 @@
 		5EC15FCC21E5A57900E578C8 /* CodeSet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeSet-Bridging-Header.h"; sourceTree = "<group>"; };
 		5EC15FCD21E5A57A00E578C8 /* NSDate+BPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BPExtension.m"; sourceTree = "<group>"; };
 		5EC15FCE21E5A57A00E578C8 /* NSDate+BPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BPExtension.h"; sourceTree = "<group>"; };
+		5EE4863E22A0F91A00823273 /* QRCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		5EFF05AA228CFC360041CC4F /* MetalClearScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalClearScreenController.swift; sourceTree = "<group>"; };
 		5EFF05AD228D01EB0041CC4F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5EFF05B0228D0B830041CC4F /* TestClearMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClearMetalView.swift; sourceTree = "<group>"; };
@@ -108,11 +110,9 @@
 				5E757ED02287094A00E6C75A /* Metal */,
 				CF8AA6F5225A68D100C4D946 /* LeetCode */,
 				CF8AA6F0225A689800C4D946 /* Transform矩阵 */,
-				5EC15FCE21E5A57A00E578C8 /* NSDate+BPExtension.h */,
-				5EC15FCD21E5A57A00E578C8 /* NSDate+BPExtension.m */,
-				5E54173621771F1D00732DB4 /* DateTimer.playground */,
-				5E5417372177242900732DB4 /* AnimationSet.playground */,
-				5E09F9C5218AD19B00D0DC5C /* PriceString.playground */,
+				5EE4863D22A0F91300823273 /* ViewSet */,
+				5EE4864022A0F92B00823273 /* PlaygroundSet */,
+				5EE4864122A0F94700823273 /* ExtensionSet */,
 				5E54172421771EFB00732DB4 /* AppDelegate.swift */,
 				5E54172621771EFB00732DB4 /* ViewController.swift */,
 				5EFF05B6228D0D150041CC4F /* Define.swift */,
@@ -132,6 +132,33 @@
 				5EFF05AF228D0B700041CC4F /* Views */,
 			);
 			path = Metal;
+			sourceTree = "<group>";
+		};
+		5EE4863D22A0F91300823273 /* ViewSet */ = {
+			isa = PBXGroup;
+			children = (
+				5EE4863E22A0F91A00823273 /* QRCodeView.swift */,
+			);
+			path = ViewSet;
+			sourceTree = "<group>";
+		};
+		5EE4864022A0F92B00823273 /* PlaygroundSet */ = {
+			isa = PBXGroup;
+			children = (
+				5E54173621771F1D00732DB4 /* DateTimer.playground */,
+				5E5417372177242900732DB4 /* AnimationSet.playground */,
+				5E09F9C5218AD19B00D0DC5C /* PriceString.playground */,
+			);
+			path = PlaygroundSet;
+			sourceTree = "<group>";
+		};
+		5EE4864122A0F94700823273 /* ExtensionSet */ = {
+			isa = PBXGroup;
+			children = (
+				5EC15FCE21E5A57A00E578C8 /* NSDate+BPExtension.h */,
+				5EC15FCD21E5A57A00E578C8 /* NSDate+BPExtension.m */,
+			);
+			path = ExtensionSet;
 			sourceTree = "<group>";
 		};
 		5EFF05AC228D01EB0041CC4F /* Frameworks */ = {
@@ -275,6 +302,7 @@
 				5E095951228D147F004898D7 /* CodeSet-Bridging-Header.h in Sources */,
 				5E095950228D1402004898D7 /* TestTriangleMetalTMVertex.h in Sources */,
 				5E54172721771EFB00732DB4 /* ViewController.swift in Sources */,
+				5EE4863F22A0F91A00823273 /* QRCodeView.swift in Sources */,
 				5EFF05B1228D0B830041CC4F /* TestClearMetalView.swift in Sources */,
 				5EC15FCF21E5A57B00E578C8 /* NSDate+BPExtension.m in Sources */,
 				5E095954228D4173004898D7 /* TestBufferTextureMetalView.swift in Sources */,
