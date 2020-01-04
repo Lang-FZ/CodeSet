@@ -60,6 +60,7 @@
 		CF8AA6F1225A689800C4D946 /* ImageView矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageView矩阵映射.png"; sourceTree = "<group>"; };
 		CF8AA6F2225A689800C4D946 /* Label矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Label矩阵映射.png"; sourceTree = "<group>"; };
 		CF8AA6F6225A695A00C4D946 /* 1.TwoSum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1.TwoSum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CF95928623C0DAC8001B3A6A /* Reduce.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Reduce.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +147,7 @@
 				5E54173621771F1D00732DB4 /* DateTimer.playground */,
 				5E5417372177242900732DB4 /* AnimationSet.playground */,
 				5E09F9C5218AD19B00D0DC5C /* PriceString.playground */,
+				CF95928623C0DAC8001B3A6A /* Reduce.playground */,
 			);
 			path = PlaygroundSet;
 			sourceTree = "<group>";
@@ -449,7 +451,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6EMFL9A2M9;
+				DEVELOPMENT_TEAM = 496JMV52SE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CodeSet/",
