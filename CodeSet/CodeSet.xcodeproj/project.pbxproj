@@ -57,6 +57,7 @@
 		5EFF05B6228D0D150041CC4F /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		5EFF05BA228D10FC0041CC4F /* TestTriangleShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TestTriangleShaders.metal; sourceTree = "<group>"; };
 		5EFF05BC228D11480041CC4F /* TestTriangleMetalTMVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTriangleMetalTMVertex.h; sourceTree = "<group>"; };
+		8DC7E7A02643FCCF00E18D65 /* 3.数组中重复的数字.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3.数组中重复的数字.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CF8AA6F1225A689800C4D946 /* ImageView矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageView矩阵映射.png"; sourceTree = "<group>"; };
 		CF8AA6F2225A689800C4D946 /* Label矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Label矩阵映射.png"; sourceTree = "<group>"; };
 		CF8AA6F6225A695A00C4D946 /* 1.TwoSum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1.TwoSum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -107,8 +108,9 @@
 		5E54172321771EFB00732DB4 /* CodeSet */ = {
 			isa = PBXGroup;
 			children = (
-				5E757ED02287094A00E6C75A /* Metal */,
-				CF8AA6F5225A68D100C4D946 /* LeetCode */,
+				5E757ED02287094A00E6C75A /* 1-Metal */,
+				CF8AA6F5225A68D100C4D946 /* 2-LeetCode */,
+				8DC7E79F2643FC8B00E18D65 /* 3-剑指Offer */,
 				CF8AA6F0225A689800C4D946 /* Transform矩阵 */,
 				5EE4863D22A0F91300823273 /* ViewSet */,
 				5EE4864022A0F92B00823273 /* PlaygroundSet */,
@@ -124,13 +126,13 @@
 			path = CodeSet;
 			sourceTree = "<group>";
 		};
-		5E757ED02287094A00E6C75A /* Metal */ = {
+		5E757ED02287094A00E6C75A /* 1-Metal */ = {
 			isa = PBXGroup;
 			children = (
 				5EFF05AA228CFC360041CC4F /* MetalClearScreenController.swift */,
 				5EFF05AF228D0B700041CC4F /* Views */,
 			);
-			path = Metal;
+			path = "1-Metal";
 			sourceTree = "<group>";
 		};
 		5EE4863D22A0F91300823273 /* ViewSet */ = {
@@ -200,6 +202,14 @@
 			path = Triangle;
 			sourceTree = "<group>";
 		};
+		8DC7E79F2643FC8B00E18D65 /* 3-剑指Offer */ = {
+			isa = PBXGroup;
+			children = (
+				8DC7E7A02643FCCF00E18D65 /* 3.数组中重复的数字.playground */,
+			);
+			path = "3-剑指Offer";
+			sourceTree = "<group>";
+		};
 		CF8AA6F0225A689800C4D946 /* Transform矩阵 */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,12 +219,12 @@
 			path = "Transform矩阵";
 			sourceTree = "<group>";
 		};
-		CF8AA6F5225A68D100C4D946 /* LeetCode */ = {
+		CF8AA6F5225A68D100C4D946 /* 2-LeetCode */ = {
 			isa = PBXGroup;
 			children = (
 				CF8AA6F6225A695A00C4D946 /* 1.TwoSum.playground */,
 			);
-			path = LeetCode;
+			path = "2-LeetCode";
 			sourceTree = "<group>";
 		};
 		CFE5EFBD228DDA0A0089BBAC /* GPUImage */ = {
@@ -251,12 +261,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = LangFZ;
 				TargetAttributes = {
 					5E54172021771EFB00732DB4 = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -355,6 +365,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -380,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -416,6 +427,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -435,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -458,7 +470,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CodeSet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,8 +481,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeSet/CodeSet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
@@ -488,7 +500,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CodeSet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,8 +510,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LFZ.CodeSet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeSet/CodeSet-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;

@@ -56,7 +56,7 @@ public func getTabBarBottomHeight() -> CGFloat {
 
 // MARK: - 刘海屏
 public func isIphoneX()->Bool {
-    if UIApplication.shared.statusBarFrame.height == 44 {
+    if UIApplication.shared.windows[0].windowScene?.statusBarManager?.statusBarFrame.height ?? 0 >= 44 {
         return true
     } else {
         return false
