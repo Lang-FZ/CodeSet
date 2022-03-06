@@ -62,6 +62,7 @@
 		CF8AA6F2225A689800C4D946 /* Label矩阵映射.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Label矩阵映射.png"; sourceTree = "<group>"; };
 		CF8AA6F6225A695A00C4D946 /* 1.TwoSum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1.TwoSum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CF8DE8F427CFC7D600B3BDE7 /* 13.RomanToInteger.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 13.RomanToInteger.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CF8DE8F527D3C07200B3BDE7 /* 14.LongestCommonPrefix.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 14.LongestCommonPrefix.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CF95928623C0DAC8001B3A6A /* Reduce.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Reduce.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CFC4CD9E27BC402900CAD91F /* 9.PalindromeNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 9.PalindromeNumber.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -235,6 +236,7 @@
 				CF8AA6F6225A695A00C4D946 /* 1.TwoSum.playground */,
 				CFC4CD9E27BC402900CAD91F /* 9.PalindromeNumber.playground */,
 				CF8DE8F427CFC7D600B3BDE7 /* 13.RomanToInteger.playground */,
+				CF8DE8F527D3C07200B3BDE7 /* 14.LongestCommonPrefix.playground */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
