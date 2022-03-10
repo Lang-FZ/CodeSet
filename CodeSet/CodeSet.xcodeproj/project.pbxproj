@@ -65,6 +65,7 @@
 		CF8DE8F527D3C07200B3BDE7 /* 14.LongestCommonPrefix.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 14.LongestCommonPrefix.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CF8DE8F627D4B46200B3BDE7 /* 20.ValidParentheses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 20.ValidParentheses.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CF8DE8F727DA67F800B3BDE7 /* 21.MergeTwoSortedLists.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 21.MergeTwoSortedLists.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CF8DE8F827DA734800B3BDE7 /* 26.RemoveDuplicatesFromSortedArray.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 26.RemoveDuplicatesFromSortedArray.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CF95928623C0DAC8001B3A6A /* Reduce.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Reduce.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CFC4CD9E27BC402900CAD91F /* 9.PalindromeNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 9.PalindromeNumber.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -241,6 +242,7 @@
 				CF8DE8F527D3C07200B3BDE7 /* 14.LongestCommonPrefix.playground */,
 				CF8DE8F627D4B46200B3BDE7 /* 20.ValidParentheses.playground */,
 				CF8DE8F727DA67F800B3BDE7 /* 21.MergeTwoSortedLists.playground */,
+				CF8DE8F827DA734800B3BDE7 /* 26.RemoveDuplicatesFromSortedArray.playground */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
